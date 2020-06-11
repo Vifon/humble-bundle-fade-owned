@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "Humble Fade Owned",
+  "author": "Wojciech Siewierski",
+  "version": "1.1.0",
+  "icons": {
+    "48": "steam48.png"
+  },
+  "permissions": [
+    "https://steamcommunity.com/id/*/games/",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "settings.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "humble-fade@einval.eu",
+      "strict_min_version": "64.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.humblebundle.com/subscription",
+        "https://*.humblebundle.com/subscription/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "page-action.js"
+    ]
+  },
+  "page_action": {
+    "browser_style": true,
+    "default_icon":  "steam48.png",
+    "default_title": "Fade owned games",
+    "show_matches": [
+      "https://*.humblebundle.com/subscription",
+      "https://*.humblebundle.com/subscription/*"
+    ],
+    "pinned": true
+  }
+}
