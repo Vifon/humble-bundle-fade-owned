@@ -1,3 +1,5 @@
+"use strict";
+
 browser.runtime.onMessage.addListener(request => {
   const games = request.games;
 

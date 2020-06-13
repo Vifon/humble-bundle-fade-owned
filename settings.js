@@ -1,3 +1,5 @@
+"use strict";
+
 function saveOptions(e) {
   e.preventDefault();
   browser.storage.sync.set({

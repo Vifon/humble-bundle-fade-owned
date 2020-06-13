@@ -1,3 +1,5 @@
+"use strict";
+
 browser.pageAction.onClicked.addListener(tab =>
   browser.storage.sync.get("steam_id").then(storage => {
     fetch(
