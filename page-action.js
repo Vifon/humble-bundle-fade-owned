@@ -9,7 +9,7 @@ browser.pageAction.onClicked.addListener(tab =>
       .then(response => response.text())
       .then(text => {
         const gamesData = JSON.parse(text.match(/var rgGames = (\[.*\]);/)[1]);
-        const normalizedGames = gamesData.map(x => x.name.toLowerCase());
+        const normalizedGames = gamesData.map(x => normalizeTitle(x.name));
         const games = new Set(normalizedGames);
 
         browser.tabs.sendMessage(tab.id, {games: games});

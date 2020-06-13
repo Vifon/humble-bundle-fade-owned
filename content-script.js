@@ -8,7 +8,9 @@ browser.runtime.onMessage.addListener(request => {
     const titles = choice.getElementsByClassName('content-choice-title');
     for (let title of titles) {
       // Should be only one.
-      if (games.has(title.textContent.trim().toLowerCase())) {
+
+      const normalizedTitle = normalizeTitle(title.textContent);
+      if (games.has(normalizedTitle)) {
         choice.style.opacity = 0.25;
       }
     }

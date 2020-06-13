@@ -26,12 +26,14 @@
         "https://*.humblebundle.com/subscription/*"
       ],
       "js": [
+        "helpers.js",
         "content-script.js"
       ]
     }
   ],
   "background": {
     "scripts": [
+      "helpers.js",
       "page-action.js"
     ]
   },
