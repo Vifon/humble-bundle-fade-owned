@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Humble Fade Owned",
   "author": "Wojciech Siewierski",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "icons": {
     "48": "steam48.png"
   },
