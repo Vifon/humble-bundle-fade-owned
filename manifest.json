@@ -22,8 +22,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.humblebundle.com/subscription",
-        "https://*.humblebundle.com/subscription/*"
+        "https://*.humblebundle.com/*"
       ],
       "js": [
         "helpers.js",
@@ -42,8 +41,7 @@
     "default_icon":  "steam48.png",
     "default_title": "Fade owned games",
     "show_matches": [
-      "https://*.humblebundle.com/subscription",
-      "https://*.humblebundle.com/subscription/*"
+      "https://*.humblebundle.com/*"
     ],
     "pinned": true
   }
