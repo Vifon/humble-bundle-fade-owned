@@ -5,7 +5,7 @@ An addressbar button for Mozilla Firefox for the Humble Bundle pages
 (https://humblebundle.com/) allowing to fade out the games
 already owned on Steam.
 
-https://addons.mozilla.org/en-US/firefox/addon/humble-choice-fade-owned/
+https://addons.mozilla.org/en-US/firefox/addon/humble-bundle-fade-owned/
 
 COPYRIGHT
 ---------
