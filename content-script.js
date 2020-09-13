@@ -24,6 +24,12 @@ browser.runtime.onMessage.addListener(request => {
       x => x.getElementsByClassName('content-choice'),
       x => x.getElementsByClassName('content-choice-title')
     )
+  } else if (window.location.pathname.match("^/home/keys")) {
+    fadeOutBundle(
+      games,
+      x => x.querySelectorAll(".unredeemed-keys-table > tbody > tr"),
+      x => x.querySelectorAll(".game-name > h4")
+    )
   } else {
     fadeOutBundle(
       games,
